@@ -1,0 +1,4 @@
+-IC:\EDA223\RTS-Lab
+-IC:\EDA223\RTS-Lab\device\inc
+-IC:\EDA223\RTS-Lab\driver\inc
+-DSTM32F40_41xxx

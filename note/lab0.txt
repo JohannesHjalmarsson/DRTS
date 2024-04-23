@@ -1,0 +1,77 @@
+# Lab 0
+
+
+## Step 2: I/O Using the serial port
+
+The code creates a 'Serial' class SCI object called 'sci0', linking its interrupt handler (called 'meth' internally) to the reader() method.
+The initSerial macro also links the Serial object to the 'app' object of the App class running the application through the internal pointer 'obj', allowing 'sci0' to use the methods of object 'app'.
+The Serial object sci0 is then initiated in the startApp method by SCI_INIT(sci), which is a macro for SYNC(sci, sci_init, 0).
+
+Now we want to implement:
+
+ - The ability of the object to translate character inputs to any integer (including negative)
+ - Using a fixed-size input buffer
+ - A delimiter (such as 'e' should mark the end)
+ - With the EOS character '\0' automatically added to the end to specify end-of-string
+
+I do this through adding a buffer to the App class, and then doing some light ascii parsing in the reader() method.
+
+Locate at least one use of SCI_WRITECHAR() and one use of SCI_WRITE() in the application.c file:
+
+We see both methods used in the reader() method. One to output strings and the other to output 'c'.
+
+For problem 2, i added an int_buf and int_counter to the class, one which keeps track of the number of inputs, and the other that stores the last three integers.
+
+
+## Step 3: Preliminaries for Part 1 – task period
+
+Problem 3a. (b)
+
+Problem 3b. 500 us
+
+
+## Step 4: Preliminaries for Part 2 – frequency index
+
+Problem 4a. ~1136 us
+
+Problem 4b. 440 * 2^(k/12) Hz
+
+f = 440*2^(x/12) Hz
+T = 1/(2*(440*2^(x/12)))*(10^(6)) us
+
+Problem 4c. (a) ~1703 us (b) ~676 us
+
+Problem 4d. 
+
+const int BROTHER_JOHN[32] = {0, 2, 4, 0, 0, 2, 4, 0, 4, 5, 7, 4, 5, 7, 7, 9, 7, 5, 4, 0, 7, 9, 7, 5, 4, 0, 0, -5, 0, 0, -5, 0};
+
+Problem 4e. Maximum is 9, minimum is -5.
+
+
+## Step 5: Preliminaries for Part 2 – transposition
+
+Problem 5a. -5, -3, -1, -5, -5, -3, -1, -5, -1, 0
+
+Problem 5b. Maximum is 14, minimum is -10.
+
+Problem 5c. We need a total of 24 indices, so the tones become:
+
+const int PERIOD[24] = {2024, 1911, 1803, 1702, 1607, 1516, 1431, 1351, 1275, 1203, 1136, 1072, 1012, 955, 901, 851, 803, 758, 715, 675, 637, 601, 568, 536, 506}
+
+Problem 5d. To get the correct period, we take period[i+key+10]. So the equation becomes x(k) = k+10 for key 0.
+
+
+## Step 6: Preliminaries for Part 2 – period lookup
+
+Problem 6. The following function was implemented.
+
+void key_handler(App *self, int key) {
+    SCI_WRITE(&sci0, "Key :");
+    SCI_WRITECHAR(&sci0, key);
+    SCI_WRITE(&sci0, "\n");
+    for (int i = 0; i < 32; i++) {
+        SCI_WRITECHAR(&sci0, PERIOD[BROTHER_JOHN[i+key+10]]);
+        SCI_WRITE(&sci0, ", ");
+    }
+    SCI_WRITE(&sci0, "\n");
+}

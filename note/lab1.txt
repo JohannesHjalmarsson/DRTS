@@ -1,0 +1,30 @@
+# Lab 1
+
+
+## Step 1: And then there was sound ...
+
+I will start the tone generator design with a ToneGen class that stores the current volume, period and output to the DAC inside an object, as well as a boolean playing.
+The method TONE_PLAY starts an ASYNC call that lets the tone generator run in the background. The object will keep switching the value of 'out' with a call to AFTER as long as 'playing' is true.
+
+Problem 1. NOTE: Not tested.
+
+
+## Step 2: Fifty shades of distortion
+
+I implemented a class that works similarly called BgLoad.
+
+Problem 2a-c. NOTE: Not tested, but I suspect that when we increase the frequency, the load will have a bigger impact since it will have to switch a lot more.
+
+
+## Step 3: Deadlines to the rescue
+
+Very easy. Just change AFTER to SEND and add the deadline as a parameter. Then added dlcontrol on both.
+
+Problem 3a-c. NOTE: Not tested.
+
+
+## Step 4: What’s the time?
+
+Use the relative CURRENT_OFFSET between runs, relative samples of special test functions made to mimic the normal running time of the loop functions without the SEND calls.
+
+Problem 4a-c. NOTE: Not tested, but tests set up and ready.

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Session Name="C:\Users\johan\Documents\EDA223\RTS-Lab\TinyTimber\TinyTimber.workspace">
+  <int Value="1" Name="m_selectedTab"/>
+  <wxString Value="C:\Users\johan\Documents\EDA223\RTS-Lab\TinyTimber\TinyTimber.workspace" Name="m_workspaceName"/>
+  <TabInfoArray Name="TabInfoArray">
+    <TabInfo>
+      <wxString Value="C:\Users\johan\Documents\EDA223\RTS-Lab\can_mel_app.c" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="54" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds">
+        <IntVectorItem Value="15"/>
+        <IntVectorItem Value="40"/>
+        <IntVectorItem Value="54"/>
+        <IntVectorItem Value="177"/>
+        <IntVectorItem Value="196"/>
+      </IntVector>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\johan\Documents\EDA223\RTS-Lab\can_melgen.c" Name="FileName"/>
+      <int Value="12" Name="FirstVisibleLine"/>
+      <int Value="175" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds">
+        <IntVectorItem Value="12"/>
+        <IntVectorItem Value="15"/>
+        <IntVectorItem Value="24"/>
+        <IntVectorItem Value="46"/>
+        <IntVectorItem Value="76"/>
+        <IntVectorItem Value="84"/>
+        <IntVectorItem Value="85"/>
+        <IntVectorItem Value="117"/>
+        <IntVectorItem Value="129"/>
+        <IntVectorItem Value="138"/>
+        <IntVectorItem Value="167"/>
+        <IntVectorItem Value="198"/>
+        <IntVectorItem Value="214"/>
+        <IntVectorItem Value="225"/>
+        <IntVectorItem Value="242"/>
+        <IntVectorItem Value="249"/>
+        <IntVectorItem Value="279"/>
+        <IntVectorItem Value="282"/>
+        <IntVectorItem Value="287"/>
+        <IntVectorItem Value="299"/>
+        <IntVectorItem Value="310"/>
+        <IntVectorItem Value="318"/>
+        <IntVectorItem Value="321"/>
+        <IntVectorItem Value="329"/>
+        <IntVectorItem Value="333"/>
+        <IntVectorItem Value="342"/>
+        <IntVectorItem Value="348"/>
+        <IntVectorItem Value="358"/>
+        <IntVectorItem Value="364"/>
+        <IntVectorItem Value="370"/>
+        <IntVectorItem Value="376"/>
+      </IntVector>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\johan\Documents\EDA223\RTS-Lab\can_melgen.h" Name="FileName"/>
+      <int Value="51" Name="FirstVisibleLine"/>
+      <int Value="28" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\johan\Documents\EDA223\RTS-Lab\application.c" Name="FileName"/>
+      <int Value="12" Name="FirstVisibleLine"/>
+      <int Value="64" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\johan\Documents\EDA223\RTS-Lab\TinyTimber.h" Name="FileName"/>
+      <int Value="72" Name="FirstVisibleLine"/>
+      <int Value="81" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\johan\Documents\EDA223\RTS-Lab\sciTinyTimber.c" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="31" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+  </TabInfoArray>
+  <SerializedObject Name="m_breakpoints">
+    <long Value="0" Name="Count"/>
+  </SerializedObject>
+  <wxString Value="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.inc;*.mm;*.m;*.xrc;*.plist;*.txt" Name="m_findInFilesMask"/>
+</Session>

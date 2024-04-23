@@ -1,0 +1,26 @@
+# Lab 2
+
+
+## Step 1: The Brother John player – the design
+
+The following design decisions were made in order to implement the music player, here driven by a new class called MelGen.
+
+ - Make new melody generator class MelGen that uses 32-bit arrays to read and play Brother John melody using a ToneGen
+ - Use half beats as the unit of time rather than bmp internally, and translate bpm to half beats in the set tempo method
+ - The "main loop" method of the MelGen class is a scheduler function that uses the SEND function to TONE_PLAY and TONE_STOP the tone generator in accordance with the beat as well as TONE_PERIOD_SET to set the key/tone
+ - Extend the functionaly of the tone generator to support a mute function (multiply output with mute)
+ - Repurpose the application.c integer input code from Lab0
+
+Problem 1a. See timing diagram.
+
+Problem 1b. See access graph.
+
+
+## Step 2: The Brother John player – the code
+
+Problem 2. NOTE: Not tested.
+
+
+## Step 3: Yes, we CAN!
+
+WIP
