@@ -52,11 +52,14 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
-    <File Name="tonegen.h"/>
-    <File Name="tonegen.c"/>
-    <File Name="can_melgen.h"/>
-    <File Name="can_melgen.c"/>
-    <File Name="can_mel_app.c"/>
+    <File Name="reg_app.c"/>
+    <File Name="regulator.h"/>
+    <File Name="regulator.c"/>
+    <File Name="tonegen.h" ExcludeProjConfig="Debug;"/>
+    <File Name="tonegen.c" ExcludeProjConfig="Debug;"/>
+    <File Name="can_melgen.h" ExcludeProjConfig="Debug;"/>
+    <File Name="can_melgen.c" ExcludeProjConfig="Debug;"/>
+    <File Name="can_mel_app.c" ExcludeProjConfig="Debug;"/>
     <File Name="application.c" ExcludeProjConfig="Debug;"/>
     <File Name="sciTinyTimber.c"/>
     <File Name="sciTinyTimber.h"/>

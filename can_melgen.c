@@ -697,7 +697,7 @@ void melgen_f1_toggle(MelGen *self, int unused) {
 
 void melgen_f2(MelGen *self, int unused) {
     self->force_failiure = 1;
-    int fail_time = 5 + ((int) CURRENT_OFFSET() % 5);
+    int fail_time = 5 + (self->time % 5);
     
     char text[20];
     sprintf(text, "Fail time: %d!\n", fail_time);

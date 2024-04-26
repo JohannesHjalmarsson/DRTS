@@ -1,4 +1,11 @@
--IC:\EDA223\RTS-Lab
--IC:\EDA223\RTS-Lab\device\inc
--IC:\EDA223\RTS-Lab\driver\inc
+-Ic:\program
+-IC:\Users\johan\Documents\EDA223\RTS-Lab
+-IC:\Users\johan\Documents\EDA223\RTS-Lab\device\inc
+-IC:\Users\johan\Documents\EDA223\RTS-Lab\driver\inc
+-Ic:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\c++\10.3.1
+-Ic:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\c++\10.3.1\arm-none-eabi
+-Ic:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include\c++\10.3.1\backward
+-Ic:\program files (x86)\gnu arm embedded toolchain\10 2021.10\lib\gcc\arm-none-eabi\10.3.1\include
+-Ic:\program files (x86)\gnu arm embedded toolchain\10 2021.10\lib\gcc\arm-none-eabi\10.3.1\include-fixed
+-Ic:\program files (x86)\gnu arm embedded toolchain\10 2021.10\arm-none-eabi\include
 -DSTM32F40_41xxx
